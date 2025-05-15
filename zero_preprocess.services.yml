@@ -19,3 +19,7 @@ services:
   plugin.manager.theme_builder:
     class: Drupal\zero_preprocess\Service\ZeroThemeBuilderPluginManager
     parent: default_plugin_manager
+
+  plugin.manager.preprocess_extender:
+    class: Drupal\zero_preprocess\Service\PreprocessExtenderPluginManager
+    parent: default_plugin_manager
