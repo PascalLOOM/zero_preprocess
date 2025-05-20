@@ -10,7 +10,7 @@ use Drupal\Component\Annotation\Plugin;
  *
  * @Annotation
  */
-class ZeroPluginBuilder extends Plugin {
+class PreprocessPluginBuilder extends Plugin {
 
   /** @var string */
   public $id;

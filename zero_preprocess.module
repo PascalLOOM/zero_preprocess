@@ -27,8 +27,8 @@ function zero_preprocess_preprocess(&$vars, $hook, $template) {
 }
 
 function zero_preprocess_theme_registry_alter(&$theme_registry) {
-  /** @var PreprocessExtenderManager $extender */
-  $extender = Drupal::service('zero.preprocess.extender');
+  /** @var PreprocessExtenderPluginManager $extender */
+  $extender = Drupal::service('plugin.manager.preprocess_extender');
 
   foreach ($theme_registry as $name => $item) {
     if (empty($item['path']) || empty($item['template'])) continue;

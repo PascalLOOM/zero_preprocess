@@ -14,8 +14,8 @@ class PreprocessExtenderPluginManager extends DefaultPluginManager {
       'Drupal\zero_preprocess\Base\PreprocessPluginBuilderInterface',
       'Drupal\zero_preprocess\Annotation\PreprocessPluginBuilder');
 
-    $this->alterInfo('zero_plugin_builder_info');
-    $this->setCacheBackend($cache_backend, 'zero_plugin_builder_info');
+    $this->alterInfo('zero_preprocess_plugin_builder_info');
+    $this->setCacheBackend($cache_backend, 'zero_preprocess_plugin_builder_info');
   }
 
 
